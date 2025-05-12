@@ -160,13 +160,15 @@
 - [Описание](https://contest.yandex.ru/contest/74967/problems/D)
 - [Решение](season_7/s7e3_d.cc)
 
-#### E. Забавная игра
+#### E. Точки на плоскости
 - [Описание](https://contest.yandex.ru/contest/74967/problems/E)
 - [Решение](season_7/s7e3_e.cc)
 
-#### F. Забавная игра
+#### F. Трехмерные ладьи
 - [Описание](https://contest.yandex.ru/contest/74967/problems/F)
 - [Решение](season_7/s7e3_f.cc)
+- *Идея решения:* строим проекции, проверяем каждую точку в проекции.
+Для ускорения используется _Find_first у std::bitset
 
 #### G. Сумма на отрезке
 - [Описание](https://contest.yandex.ru/contest/74967/problems/G)
