@@ -51,7 +51,7 @@ int main()
         {
             // такие заказы можно посчитать сразу, 
             // т.к. очередность их назначения ничего не меняет
-            if(order.v_s + order.m_d == seq.size()){
+            if(order.v_s + order.m_d == static_cast<int>(seq.size())){
                 vasya_days += order.v_s;
                 continue;
             }

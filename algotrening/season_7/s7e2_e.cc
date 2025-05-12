@@ -125,7 +125,7 @@ public:
     }
 
     // Обновление элемента в позиции pos (0-based)
-    inline void update(size_t pos, int value) {
+    inline void update(int pos, int value) {
         if (pos >= sz_origin)
             return;
         update(1, 0, sz_origin - 1, pos, value);

@@ -56,7 +56,7 @@ bool get_possible_lengths(bricks_by_color& bricks, vector<int>& len_candidates)
             for(int i = dp.size() - 1; i >= 0; --i)
             {
                 if(dp[i] == false) continue;
-                if(i + brick_len >= dp.size()) continue;
+                if(i + brick_len >= static_cast<int>(dp.size())) continue;
                 dp[i + brick_len] = dp[i];
             }
         }
@@ -70,11 +70,11 @@ bool get_possible_lengths(bricks_by_color& bricks, vector<int>& len_candidates)
     // стену длиной i то и в этом dp[i] будет false.
     // таким образом, можно поддерживать один dp
     // динамически обновляя его после обработки очередного цвета
-    vector<bool> dp = move(dp_build(0));
+    vector<bool> dp = dp_build(0);
 
     for(size_t color = 1; color < bricks.size(); ++color)
     {
-        vector<bool> vec = move(dp_build(color));
+        vector<bool> vec = dp_build(color);
         for(size_t i = 0; i < vec.size(); i++)
             dp[i] = dp[i] & vec[i];
     }
@@ -92,16 +92,16 @@ bool get_possible_lengths(bricks_by_color& bricks, vector<int>& len_candidates)
 void build_wall(bricks_by_color& bricks, int len_required, vector<int>& result)
 {   
     // перебираем цвета
-    for(int color = 0; color < bricks.size(); ++color)
+    for(size_t color = 0; color < bricks.size(); ++color)
     {
         const bricks_set& curr_bricks = bricks[color];
 
         vector<vector<int>> dp(curr_bricks.size() + 1, vector<int>(len_required + 1, 0));
 
-        for(int i = 1; i < dp[0].size(); ++i)
-            if(i >= curr_bricks[0].len) dp[1][i] = curr_bricks[0].len;
+        for(size_t i = 1; i < dp[0].size(); ++i)
+            if(i >= static_cast<size_t>(curr_bricks[0].len)) dp[1][i] = curr_bricks[0].len;
 
-        for(int i = 1; i <= curr_bricks.size(); ++i)
+        for(size_t i = 1; i <= curr_bricks.size(); ++i)
         {
             const brick_t& brick = curr_bricks[i - 1];
 

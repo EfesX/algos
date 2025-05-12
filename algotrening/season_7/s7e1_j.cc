@@ -48,7 +48,7 @@ int main(){
     vector<string> result;
     int total_days = 0;
 
-    for(int i = 0; i < events.size(); i++)
+    for(size_t i = 0; i < events.size(); i++)
     {
         const event_t& event = events[i];
 

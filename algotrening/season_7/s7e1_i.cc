@@ -43,10 +43,10 @@ int main()
     vector<vector<int>> dp(n + 1, vector<int>(total_volume + 1, 0));
 
     // заполняем таблицу
-    for(int i = 1; i <= items.size(); ++i) {
+    for(int i = 1; i <= static_cast<int>(items.size()); ++i) {
         const item_t& item = items[i - 1];
 
-        for(int j = 1; j < dp[i].size(); ++j)
+        for(int j = 1; j < static_cast<int>(dp[i].size()); ++j)
         {
             dp[i][j] = dp[i - 1][j];
             
