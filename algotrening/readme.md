@@ -173,6 +173,7 @@
 #### G. Сумма на отрезке
 - [Описание](https://contest.yandex.ru/contest/74967/problems/G)
 - [Решение](season_7/s7e3_g.cc)
+- *Идея решения:* дерево Фенвика
 
 #### H. Звезды
 - [Описание](https://contest.yandex.ru/contest/74967/problems/H)
