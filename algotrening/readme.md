@@ -134,6 +134,53 @@
 - *Идея решения:* дерево отрезков с ленивой операцией присваивания
 и полиномиальным хэшированием для операций сравнения отрезков
 
+</details>
+
+<details>
+<summary> Битовые операции, исправляющие коды Хэмминга, сжатие данных (алгоритм Лемпела-Зива) </summary>
+
+#### A. Количество единиц
+- [Описание](https://contest.yandex.ru/contest/74967/problems/A)
+- [Решение](season_7/s7e3_a.cc)
+- *Идея решения:* используем __builtin_popcountll как самый быстрый способ подсчета единиц, хотя в 
+данной задаче любой другой способ тоже бы зашел
+
+#### B. Миссия джедая Ивана
+- [Описание](https://contest.yandex.ru/contest/74967/problems/B)
+- [Решение](season_7/s7e3_b.cc)
+- *Идея решения:* просто считаем побитовое ИЛИ для каждой строки матрицы
+
+#### C. Переупорядочивание с XOR
+- [Описание](https://contest.yandex.ru/contest/74967/problems/C)
+- [Решение](season_7/s7e3_c.cc)
+
+#### D. Забавная игра
+- [Описание](https://contest.yandex.ru/contest/74967/problems/D)
+- [Решение](season_7/s7e3_d.cc)
+
+#### E. Забавная игра
+- [Описание](https://contest.yandex.ru/contest/74967/problems/E)
+- [Решение](season_7/s7e3_e.cc)
+
+#### F. Забавная игра
+- [Описание](https://contest.yandex.ru/contest/74967/problems/F)
+- [Решение](season_7/s7e3_f.cc)
+
+#### G. Сумма на отрезке
+- [Описание](https://contest.yandex.ru/contest/74967/problems/G)
+- [Решение](season_7/s7e3_g.cc)
+
+#### H. Звезды
+- [Описание](https://contest.yandex.ru/contest/74967/problems/H)
+- [Решение](season_7/s7e3_h.cc)
+
+#### I. Исправления одной ошибки
+- [Описание](https://contest.yandex.ru/contest/74967/problems/I)
+- [Решение](season_7/s7e3_i.cc)
+
+#### J. Упаковка и распаковка
+- [Описание](https://contest.yandex.ru/contest/74967/problems/J)
+- [Решение](season_7/s7e3_j.cc)
 
 </details>
 
