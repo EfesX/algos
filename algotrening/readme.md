@@ -178,10 +178,12 @@
 #### H. Звезды
 - [Описание](https://contest.yandex.ru/contest/74967/problems/H)
 - [Решение](season_7/s7e3_h.cc)
+- *Идея решения:* трехмерное дерево Фенвика
 
 #### I. Исправления одной ошибки
 - [Описание](https://contest.yandex.ru/contest/74967/problems/I)
 - [Решение](season_7/s7e3_i.cc)
+- *Идея решения:* кодирование/декодирование Хэмминга
 
 #### J. Упаковка и распаковка
 - [Описание](https://contest.yandex.ru/contest/74967/problems/J)
