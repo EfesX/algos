@@ -16,4 +16,9 @@ all: $(TARGETS)
 clean:
 	find . -type f -name '*.out' -delete
 
+temp:
+	rm -rf ../in2.txt
+	echo 2 > ../in2.txt
+	make season_7/s7e3_b.out && cat ../in1.txt | ./season_7/s7e3_b.out >> ../in2.txt
+
 .PHONY: all clean
