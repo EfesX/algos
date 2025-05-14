@@ -85,13 +85,13 @@ int main()
     // Лямбда-функция для "переворачивания" битов в числах
     // нулевой и первый отличающийся от нулевого
     auto flip_bits = [&highest_one](vector<uint64_t>& arr){
-        for(int i = 0; i < arr.size(); i++)
+        for(size_t i = 0; i < arr.size(); i++)
         {
             auto bs = bitset<64>(arr[i]);
 
             // Пропускаем числа без единичных битов или со всеми битами установленными
             if(bs.count() == 0) continue;
-            if(bs.count() == highest_one + 1) continue;
+            if(bs.count() == static_cast<size_t>(highest_one + 1)) continue;
 
             uint64_t mask = 1;  // Начинаем с младшего бита
 
@@ -128,7 +128,7 @@ int main()
         bool is_done = false;  
 
         // Пытаемся найти число, где эти два бита различаются
-        for (int i = 0; i < arr.size(); i++) 
+        for (size_t i = 0; i < arr.size(); i++) 
         {
             bool b1 = arr[i] & (1ULL << bit1);  // Проверяем bit1
             bool b2 = arr[i] & (1ULL << bit2);  // Проверяем bit2

@@ -61,7 +61,7 @@ int main()
             size_t z = safe_z._Find_first();
 
             // Если нашли такое z в допустимом диапазоне [1, N]
-            if(z >= 1 && z <= N){
+            if(z >= 1 && z <= static_cast<size_t>(N)){
                 // Выводим "NO" и координаты безопасной клетки
                 cout << "NO" << endl;
                 cout << x << " " << y << " " << z << endl;
