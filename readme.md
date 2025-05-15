@@ -1,5 +1,6 @@
 [![C/C++ CI](https://github.com/EfesX/algos/actions/workflows/c-cpp.yml/badge.svg?branch=main)](https://github.com/EfesX/algos/actions/workflows/c-cpp.yml)
 
-# [Тренировки по алгоритмам](algotrening/readme.md)
+# Решиния различных задачек по алгоритмам
 
-Решеные задачи с тренировок по алгоритмам
++ [_algotrening_](algotrening/readme.md). тренировки по алгоритмам от Яндекс'а.
++ [_leetcode_](leetcode). задачи с LeetCode.
