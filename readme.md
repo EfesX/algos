@@ -4,3 +4,4 @@
 
 + [_algotrening_](algotrening/readme.md). тренировки по алгоритмам от Яндекс'а.
 + [_leetcode_](leetcode). задачи с LeetCode.
++ [_coderun_](coderun). задачи с CodeRun.
