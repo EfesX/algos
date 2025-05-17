@@ -3,5 +3,5 @@
 # Решения различных задачек по алгоритмам
 
 + [_algotrening_](algotrening/readme.md). тренировки по алгоритмам от Яндекс'а.
-+ [_leetcode_](leetcode). задачи с LeetCode.
++ [_leetcode_](leetcode). задачи с [LeetCode](https://leetcode.com/u/EfesX).
 + [_coderun_](coderun). задачи с CodeRun.
