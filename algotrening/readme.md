@@ -5,7 +5,25 @@
 # Season 3
 # Season 4
 # Season 5
+
+
 # Season 6
+<details>
+<summary> Занятие 1 (Тестирование) </summary>
+
+#### A. Плот
+- [Описание](https://contest.yandex.ru/contest/66792/problems/A)
+- [Решение](season_6/s6e1_a.cc)
+
+</details>
+
+
+
+
+
+
+
+
 
 
 # Season 7
